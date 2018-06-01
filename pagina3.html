@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<body background="D:\trabajos/2018/fondo1.jpg">
+          <font color="black">
+
+<p align="left"> <video src="D:\trabajos/Nuevo proyecto.mp4" width="500" height="480" autoplay controls></video>
+
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides w3-animate-fading" src="http://static.pulzo.com/images/20170829065638/istock-639698498-900x485.jpg?itok=1504014709" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="https://st3.depositphotos.com/4819429/18668/v/1600/depositphotos_186683454-stock-illustration-class-of-2018-graduation-poster.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="https://i.pinimg.com/564x/39/53/54/395354c46004969659a6706eb30c5735.jpg" style="width:100%">
+  <img class="mySlides w3-animate-fading" src="https://img.etsystatic.com/il/1bcfff/1297061357/il_570xN.1297061357_keyf.jpg?version=0" style="width:100%">
+ <img class="mySlides w3-animate-fading" src="https://i.pinimg.com/236x/f0/01/55/f00155439f7d029ed85484f12b38e2df--graduation--college-graduation.jpg" style="width:100%">
+ 
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 9000);    
+}
+</script>
+
+</html>
